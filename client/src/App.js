@@ -84,6 +84,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2>WELCOME TO THE CHAT</h2>
+        <p>(Open a new Tab to start a new chat)</p>
         <div className='messages' ref={divRef}>
           <p>You received {messages.length} Messages </p>
           {
@@ -95,6 +96,7 @@ function App() {
           <input type='text' name='msg' ref={inputRef} />
           <button onClick={() => {
             sendMessageToConnected(inputRef.current.value)
+            inputRef.current.value = ''
           }}>Submit</button>
         </form>
       </header>
