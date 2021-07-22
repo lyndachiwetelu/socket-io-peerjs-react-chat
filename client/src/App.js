@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { useEffect, useState, useRef } from 'react'
 import Peer from 'peerjs'
 
-const socket = io('http://localhost:3001') // replace with your own URL
+const socket = io('http://localhost:3001') // replace with your own URL if necessary
 
 function App() {
   const divRef = useRef()
